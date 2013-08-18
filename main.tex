@@ -1,0 +1,101 @@
+\documentclass{projetofinal-dcc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%P A C O T E S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Adicione aqui seus pacotes
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%I N I C I O  D O  D O C U M E N T O
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% título da tese é obrigatório
+\title{Título}
+
+% autor é obrigatório; máximo de 3 autores
+\author{Nome completo aluno 1}{\input{elementos-pretextuais/agradecimentos}}
+%\author{Nome completo aluno 2}{\input{elementos-pretextuais/agradecimentos}}
+%\author{Nome completo aluno 3}{\input{elementos-pretextuais/agradecimentos}}
+
+% orientador é obrigatório
+\advisor[Prof.]{Nome do orientador,~M.Sc.}{}
+
+% co-orientador é opcional
+\coadvisor[Prof.]{Nome do co-orientador,~M.Sc.}{}
+
+% máximo de 3 integrantes da banca (orientador e co-orientador já são adicionados automaticamente)
+\banca[Prof.]{Nome do participante banca 1,~D.Sc.}{COPPE~-~UFRJ}
+\banca[Prof.]{Nome do participante banca 2,~Ph.D.}{COPPE~-~UFRJ}
+%\banca[Prof.]{Nome do participante banca 3,~Ph.D.}{COPPE~-~UFRJ}
+
+\location{Rio~de~Janeiro}{RJ}{Brasil}
+
+% mês e ano de defesa
+\date{Janeiro}{2013}
+\maketitle
+
+\startdocument
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%A G R A D E C I M E N T O S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\makethankspage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%R E S U M O
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}{
+  \input{elementos-pretextuais/resumo}
+}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%A B S T R A C T
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{englishabstract}{
+  \input{elementos-pretextuais/abstract}
+}
+\end{englishabstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%L I S T A S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figuras
+\makefigurespage
+
+% Tabelas
+\maketablespage
+
+% Algoritmos
+%\makelistingspage
+
+% Abreviaturas (devem estar em ordem alfabética)
+\makeabrevpage{\input{elementos-pretextuais/abreviaturas}}
+
+% Símbolos (devem estar em ordem alfabética)
+\makesymbolspage{\input{elementos-pretextuais/simbolos}}
+
+% Sumário 
+\maketocpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%C O N T E Ú D O
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\startcontent
+\input{elementos-textuais/topico-1}
+\input{elementos-textuais/topico-2}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% B I B L I O G R A F I A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Retirar esta parte se o trabalho não tiver bibliografia
+\makebibspage{abnt}{elementos-postextuais/referencias}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A P E N D I C E
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Retirar esta parte se o trabalho não tiver anexos
+\appendix
+\input{elementos-postextuais/apendice}
+
+\end{document}

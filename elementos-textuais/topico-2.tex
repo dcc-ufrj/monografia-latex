@@ -1,0 +1,51 @@
+\chapter{Lorem ipsum dolor sit amet}\label{chp:LABEL_CHP_2}
+
+\section{Tables}\label{sec:LABEL_CHP_2_SEC_A}
+Reference: \url{http://en.wikibooks.org/wiki/LaTeX/Tables}
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{ |l|l|l| }
+    \hline
+      Goalkeeper & Alan Smith & Paul Robinson \\
+    \hline
+      Lucus Radebe &  Mark Viduka & Michael Duberry \\
+    \hline
+      Eirik Bakke & Jamie McMaster & Jody Morris \\
+    \hline
+  \end{tabular}
+  \caption{This table shows some data}
+  \label{tab:LABEL_TAB_1}
+\end{table}
+
+\section{Images}\label{sec:LABEL_CHP_2_SEC_B}
+Reference: \url{http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagens/chick.png}
+  \caption{Chick}
+  \label{fig:LABEL_FIG_1}
+\end{figure}
+
+\section{Equations}\label{sec:LABEL_CHP_2_SEC_C}
+Reference: \url{http://en.wikibooks.org/wiki/LaTeX/Mathematics}
+
+Also: \url{http://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics}
+
+\begin{equation}
+  (x + y)^2 = x^2 + 2xy + y^2
+  \label{eq:LABEL_EQ_1}
+\end{equation}
+
+\section{References}\label{sec:LABEL_CHP_2_SEC_D}
+\begin{itemize}
+  \item Referencing \refchapter{chp:LABEL_CHP_1}
+  \item Referencing \refsection{sec:LABEL_CHP_1_SEC_A}
+  \item Referencing \refsection{sec:LABEL_CHP_1_SEC_C}
+  \item Referencing \reftable{tab:LABEL_TAB_1}
+  \item Referencing \reffigure{fig:LABEL_FIG_1}
+  \item Referencing \refequation{eq:LABEL_EQ_1}
+  \item Article \cite{art:REF_ART_1}
+  \item Referencing \refappendix{chp:LABEL_APP_1}
+\end{itemize}

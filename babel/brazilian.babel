@@ -1,0 +1,49 @@
+%
+% definições para textos em português
+%
+\@namedef{captionsbrazilian}{%
+  \def\chaptername{Cap{\'i}tulo}%
+  \def\sectionname{Se\c{c}\~{a}o}%
+  \def\bibname{Refer{\^e}ncias}%
+  \def\abstractname{Resumo}%
+  \def\appendixname{Ap{\^e}ndice}%
+  \def\contentsname{Sum{\'a}rio}%
+  \def\listfigurename{Lista de Figuras}%
+  \def\listtablename{Lista de Tabelas}%
+  \def\listdefname{Lista de Defini\c{c}\~{o}es}%
+  \def\listtheoremsname{Lista de Teoremas}%
+  \def\corollaryname{Corol{\'a}rio}%
+  \def\propositionname{Proposi\c{c}\~{a}o}%
+  \def\definitionname{Defini\c{c}\~{a}o}%
+  \def\conjecturename{Conjectura}%
+  \def\examplename{Exemplo}%
+  \def\exercisename{Exerc{\'i}cio}%
+  \def\propertyname{Property}%
+  \def\remarknamek{Observa\c{c}\~{a}o}%
+  \def\lemmaname{Lema}%
+  \def\theoremname{Teorema}%
+  \def\proofname{Prova}%
+  \def\figurename{Figura}%
+  \def\equationname{Equa\c{c}\~{a}o}%
+  \def\lstlistingname{C{\'o}digo}%
+  \def\tablename{Tabela}%
+  \def\advisorname{Orientador}%
+  \def\coadvisorname{Co-orientador}%
+  \def\listabbrvname{Lista de Abreviaturas e Siglas}%
+  \def\listsymbolname{Lista de S{\'i}mbolos}%
+  \def\lstlistlistingname{Lista de C{\'o}digos}%
+  \def\annexname{Anexo}%
+  \def\keywordsname{Palavras-chave}%
+  \def\byname{por}%
+  \def\coordname{Coordenador do Curso}%
+}
+\@namedef{datebrazilian}{%
+  \def\monthname{%
+    \ifcase\month\or%
+      janeiro\or fevereiro\or mar{\c{c}}o\or abril\or%
+      maio\or junho\or julho\or agosto\or setembro\or%
+      outubro\or novembro\or dezembro%
+    \fi%
+  }%
+  \def\ii@date{\@publmonth~de~\@publyear}%
+}

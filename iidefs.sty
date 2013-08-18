@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{iidefs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%N O M E S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ufrj{Universidade Federal do Rio de Janeiro}
+\def\im{Instituto de Matem{\'a}tica}
+\def\cbcc{Curso de Bacharelado em Ci{\^e}ncia da Computa{\c{c}}{\~a}o}
+\def\dcc{Departamento de Ci{\^e}ncia da Computa{\c{c}}{\~a}o}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%D I M E N S Õ E S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\fullwidth{150mm}              % set for headings underline
+\def\halfwidth{66mm}               % figures in two-columns
+\def\halfminipage{74mm}            % mini-page for two-columns
+\def\fullheight{240mm}
+
+\def\monstersize{200mm}
+\def\hugesize{175mm}
+\def\xlargesize{140mm}             % use these in \epsfxsize=
+\def\largesize{125mm}
+\def\mediumsize{100mm}
+\def\smallsize{75mm}
+\def\tinysize{50mm}
+\def\minutesize{25mm}
+
+\setlength{\parskip}{0.3cm}
+
+\def\baselinestretch{1.5}          % final version only
+\headheight 20pt
+\headsep 20pt
+\textwidth=150mm
+\textheight=\fullheight            % <= 246mm
+\oddsidemargin 5mm                 % RHS page 38mm =6mm
+\evensidemargin 5mm                % LHS page 26mm =-13mm
+\topmargin -3mm                    % space from top =26mm
+
+\def\PARstart#1#2{
+\begingroup\def\par{\endgraf\endgroup\lineskiplimit=0pt}
+\setbox2=\hbox{\uppercase{#2} }\newdimen\tmpht \tmpht \ht2
+\advance\tmpht by \baselineskip\font\hhuge=cmr10 at \tmpht
+\setbox1=\hbox{{\hhuge #1}}
+\count7=\tmpht \count8=\ht1\divide\count8 by 1000 \divide\count7 by\count8
+\tmpht=.001\tmpht\multiply\tmpht by \count7\font\hhuge=cmr10 at \tmpht
+\setbox1=\hbox{{\hhuge #1}} \noindent \hangindent1.05\wd1
+\hangafter=-2 {\hskip-\hangindent \lower1\ht1\hbox{\raise1.0\ht2\copy1}
+\kern-0\wd1}\copy2\lineskiplimit=-1000pt
+}
+

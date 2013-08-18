@@ -1,0 +1,8 @@
+int pinoLed = 5;
+int valor = 128;
+void setup() {
+  pinMode(pinoLed, OUTPUT);     // ajusta o pino para saida
+}
+void loop() {
+  analogWrite(pinoLed, valor);  // razao ciclica em 50%
+}
