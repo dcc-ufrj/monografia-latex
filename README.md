@@ -2,7 +2,7 @@
 
 O projeto contém os arquivos necessários para alunos de graduação escreverem o projeto de conclusão de curso com o Latex.
 Foram criados textos de exemplo para facilitar a compreensão da estrutura.
-Para visualizar no ShareLatex, [clique aqui](https://www.sharelatex.com/project/53cc82fbbbeefb8267e7dda9).
+Para visualizar no ShareLatex, [clique aqui](https://www.sharelatex.com/project/53cc8ea6bbeefb8267e7ddef).
 
 ### O que o modelo permite atualmente?
 * Até três autores com seus respectivos agradecimentos;
