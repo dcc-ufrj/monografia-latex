@@ -1,4 +1,4 @@
-## Modelo Latex para dissertação do curso Bacharelado em Ciência da Computação
+## Modelo Latex para monografia do curso Bacharelado em Ciência da Computação
 
 O projeto contém os arquivos necessários para alunos de graduação escreverem o projeto de conclusão de curso com o Latex.
 Foram criados textos de exemplo para facilitar a compreensão da estrutura.
