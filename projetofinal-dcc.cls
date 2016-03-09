@@ -247,7 +247,11 @@
     \clearpage
     \thispagestyle{empty}
     \bigskip
-    \centerline{\textbf{\large\@title}}
+    \begingroup
+      \leftskip=0cm plus 0.5fil \rightskip=0cm plus -0.5fil
+      \parfillskip=0cm plus 1fil
+      \textbf{\large\@title}\par
+    \endgroup
     \bigskip
     \centerline{\textbf{\@authora}}
     \@ifundefined{@authorb}{}{
